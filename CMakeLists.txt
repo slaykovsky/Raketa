@@ -7,7 +7,7 @@ add_subdirectory(src)
 include_directories(src)
 include_directories(include)
 
-add_definitions("-std=c++11 -Wall")
+add_definitions("-std=c++0x -Wall")
 
 add_executable(Raketa main.cxx)
 

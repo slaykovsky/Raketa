@@ -1,6 +1,6 @@
 include_directories(../include)
 
-add_definitions("-std=c++11")
+add_definitions("-std=c++0x")
 
 find_package(Threads REQUIRED)
 
