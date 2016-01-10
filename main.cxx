@@ -65,6 +65,8 @@ int main(int argc, char **argv) {
   std::map<uint64_t, uint64_t> res;
 
   int number_of_threads = std::thread::hardware_concurrency();
+  if (number_of_threads < 4)
+    number_of_threads = 8;
   std::cout << "Threads: " << number_of_threads << std::endl;
 
   std::cout << "Generating primes in 10000 range" << std::endl;
